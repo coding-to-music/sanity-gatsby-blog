@@ -36,3 +36,22 @@ Netlify automatically deploys new changes commited to master on GitHub. If you w
 [![Slack Community Button](https://slack.sanity.io/badge.svg)](https://slack.sanity.io/)
 
 Join [Sanity’s developer community](https://slack.sanity.io) or ping us [on twitter](https://twitter.com/sanity_io).
+
+# Sanity Project info
+SANITY PROJECT
+
+Project ID	u7tr3btf
+Dataset	production
+APPS
+
+## Frontend	
+
+https://sanity-gatsby-blog-web-fcmdnzgb.netlify.app
+
+## APIS
+GROQ	https://u7tr3btf.api.sanity.io/v1/groq/production
+GraphQL	https://u7tr3btf.api.sanity.io/v1/graphql/production/default
+
+## CODE
+GitHub repo	https://github.com/coding-to-music/sanity-gatsby-blog
+

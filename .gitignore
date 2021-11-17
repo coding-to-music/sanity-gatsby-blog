@@ -4,6 +4,7 @@
 # Dependency directories
 /node_modules
 
+.env.development
 *.lock
 .vscode/
 .idea/
