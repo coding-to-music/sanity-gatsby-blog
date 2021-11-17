@@ -4,5 +4,9 @@
 # Dependency directories
 /node_modules
 
+*.lock
+.vscode/
+.idea/
+
 # lerna files
 /lerna-debug.log
