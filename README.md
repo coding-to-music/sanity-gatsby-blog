@@ -1,4 +1,6 @@
-# Blog with Gatsby
+# Fast Blog with Gatsby, Structured content using Sanity.io, using Netlify CDN
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c356b354-8bb4-4b62-8f00-86a2def85980/deploy-status)](https://app.netlify.com/sites/sanity-gatsby-blog-studio-s6cyg9nt/deploys)
 
 _Fully customizable blog template with a React.js front-end._
 

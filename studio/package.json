@@ -5,7 +5,7 @@
   "main": "package.json",
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
-    "dev": "sanity start",
+    "dev": "kill-port 3333 && sanity start",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
     "build": "sanity build",
     "graphql-deploy": "sanity graphql deploy --playground",
@@ -22,6 +22,7 @@
     "@sanity/default-login": "^2.7.0",
     "@sanity/desk-tool": "^2.7.4",
     "@sanity/studio-hints": "^2.7.0",
+    "kill-port": "^1.6.1",
     "date-fns": "^2.19.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
