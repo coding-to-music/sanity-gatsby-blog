@@ -57,7 +57,7 @@ export default {
     {
       name: "document-list",
       options: {
-        title: "Exhibits",
+        title: "Recent Exhibits",
         order: "_createdAt desc",
         types: ["exhibit"],
       },

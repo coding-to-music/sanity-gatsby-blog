@@ -9,7 +9,7 @@ import { toPlainText } from "../lib/helpers";
 
 export const query = graphql`
   query ExhibitPostTemplateQuery($id: String!) {
-    post: sanityPost(id: { eq: $id }) {
+    exhibit: sanityPost(id: { eq: $id }) {
       id
       publishedAt
       categories {

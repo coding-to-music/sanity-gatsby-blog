@@ -1,5 +1,5 @@
 import * as styles from "./exhibit-post-preview.module.css";
-import { buildImageObj, cn, getBlogUrl } from "../lib/helpers";
+import { buildImageObj, cn, getExhibitUrl } from "../lib/helpers";
 import { Link } from "gatsby";
 import PortableText from "./portableText";
 import React from "react";
@@ -12,7 +12,7 @@ function ExhibitPostPreview(props) {
   return (
     <Link
       className={props.isInList ? styles.inList : styles.inGrid}
-      to={getBlogUrl(props.publishedAt, props.slug.current)}
+      to={getExhibitUrl(props.publishedAt, props.slug.current)}
     >
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
