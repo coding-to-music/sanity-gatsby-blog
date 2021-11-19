@@ -41,4 +41,4 @@ function ExhibitPostPreview(props) {
   );
 }
 
-export default BlogPostPreview;
+export default ExhibitPostPreview;
