@@ -103,6 +103,13 @@ const IndexPage = (props) => {
             nodes={postNodes}
             browseMoreHref="/archive/"
           />
+        )},
+        {postNodes && (
+          <ExhibitPostPreviewList
+            title="Latest exhibits posts"
+            nodes={postNodes}
+            browseMoreHref="/archive/"
+          />
         )}
       </Container>
     </Layout>
