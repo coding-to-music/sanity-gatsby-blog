@@ -83,6 +83,12 @@ const IndexPage = (props) => {
         .filter(filterOutDocsPublishedInTheFuture)
     : [];
 
+  const exhibitNodes = (data || {}).posts
+    ? mapEdgesToNodes(data.posts)
+        .filter(filterOutDocsWithoutSlugs)
+        .filter(filterOutDocsPublishedInTheFuture)
+    : [];
+
   if (!site) {
     throw new Error(
       'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
@@ -105,10 +111,10 @@ const IndexPage = (props) => {
             browseMoreHref="/archive/"
           />
         )},
-        {postNodes && (
+        {exhibitNodes && (
           <ExhibitPostPreviewList
             title="Latest exhibits posts"
-            nodes={postNodes}
+            nodes={exhibitNodes}
             browseMoreHref="/archive/"
           />
         )}
