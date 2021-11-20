@@ -12,6 +12,7 @@ function BlogPost(props) {
     _rawBody,
     authors,
     categories,
+    tags,
     title,
     mainImage,
     publishedAt,
