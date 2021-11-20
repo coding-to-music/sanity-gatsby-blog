@@ -56,6 +56,16 @@ function ExhibitPost(props) {
                 </ul>
               </div>
             )}
+            {tags && (
+              <div className={styles.tags}>
+                <h3 className={styles.tagsHeadline}>Tags</h3>
+                <ul>
+                  {tags.map((tag) => (
+                    <li key={tag._id}>{tag.title}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </aside>
         </div>
       </Container>

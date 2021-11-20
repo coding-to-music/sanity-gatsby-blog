@@ -69,6 +69,11 @@ export default () =>
         .schemaType("category")
         .child(S.documentTypeList("category").title("Categories")),
       S.listItem()
+        .title("Tags")
+        .icon(MdLocalOffer)
+        .schemaType("tag")
+        .child(S.documentTypeList("tag").title("Tags")),
+      S.listItem()
         .title("Exhibits")
         .icon(MdAttachFile)
         .schemaType("exhibit")
@@ -78,7 +83,7 @@ export default () =>
       // defined the structure above.
       ...S.documentTypeListItems().filter(
         (listItem) =>
-          !["category", "author", "post", "exhibit", "siteSettings"].includes(
+          !["category", "author", "post", "exhibit", "tag", "siteSettings"].includes(
             listItem.getId()
           )
       ),

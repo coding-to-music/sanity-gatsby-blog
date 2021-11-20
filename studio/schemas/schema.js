@@ -7,6 +7,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 // document schemas
 import author from "./documents/author";
 import category from "./documents/category";
+import tag from "./documents/tag";
 import post from "./documents/post";
 import exhibit from "./documents/exhibit";
 import siteSettings from "./documents/siteSettings";
