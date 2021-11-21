@@ -44,13 +44,13 @@ export default {
       },
     },
     { name: "project-users", layout: { height: "auto" } },
-    { name: "project-users", layout: { height: "auto" } },
     {
       name: "document-list",
       options: {
         title: "Recent blog posts",
         order: "_createdAt desc",
         types: ["post"],
+        showCreateButton: true,
       },
       layout: { width: "medium" },
     },
@@ -58,10 +58,31 @@ export default {
       name: "document-list",
       options: {
         title: "Recent Exhibits",
-        order: "_createdAt desc",
+        // order: "_createdAt desc",
         types: ["exhibit"],
+        showCreateButton: true,
       },
-      layout: { width: "medium" },
+      layout: { width: "auto" },
+    },
+    {
+      name: "document-list",
+      options: {
+        title: "Tags",
+        order: "_createdAt desc",
+        types: ["tag"],
+        showCreateButton: true,
+      },
+      layout: { width: "auto" },
+    },
+    {
+      name: "document-list",
+      options: {
+        title: "Recent Projects",
+        order: "_createdAt desc",
+        types: ["project"],
+        showCreateButton: true,
+      },
+      layout: { width: "auto" },
     },
   ],
 };

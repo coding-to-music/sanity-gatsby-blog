@@ -6,7 +6,7 @@ import {
   mapEdgesToNodes,
 } from "../lib/helpers";
 import BlogPostPreviewList from "../components/blog-post-preview-list";
-import ExhibitPostPreviewList from "../components/exhibit-post-preview-list";
+// import ExhibitPostPreviewList from "../components/exhibit-post-preview-list";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
@@ -83,11 +83,11 @@ const IndexPage = (props) => {
         .filter(filterOutDocsPublishedInTheFuture)
     : [];
 
-  const exhibitNodes = (data || {}).posts
-    ? mapEdgesToNodes(data.posts)
-        .filter(filterOutDocsWithoutSlugs)
-        .filter(filterOutDocsPublishedInTheFuture)
-    : [];
+  // const exhibitNodes = (data || {}).posts
+  //   ? mapEdgesToNodes(data.posts)
+  //       .filter(filterOutDocsWithoutSlugs)
+  //       .filter(filterOutDocsPublishedInTheFuture)
+  //   : [];
 
   if (!site) {
     throw new Error(
@@ -111,13 +111,6 @@ const IndexPage = (props) => {
             browseMoreHref="/archive/"
           />
         )},
-        {exhibitNodes && (
-          <ExhibitPostPreviewList
-            title="Latest exhibits posts"
-            nodes={exhibitNodes}
-            browseMoreHref="/archive/"
-          />
-        )}
       </Container>
     </Layout>
   );

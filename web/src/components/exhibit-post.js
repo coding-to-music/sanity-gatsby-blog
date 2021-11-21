@@ -12,6 +12,7 @@ function ExhibitPost(props) {
     _rawBody,
     authors,
     categories,
+    tags,
     title,
     mainImage,
     publishedAt,

@@ -1,6 +1,6 @@
 import S from "@sanity/desk-tool/structure-builder";
 import { MdSettings } from "react-icons/md";
-import { MdPerson, MdDescription, MdLocalOffer, MdAttachFile, MdWebStories, MdOutlineFilterAlt } from "react-icons/md";
+import { MdPerson, MdDescription, MdLocalOffer, MdAttachFile, MdTag, MdWebStories, MdOutlineFilterAlt } from "react-icons/md";
 import IframePreview from "../previews/IframePreview";
 
 // Web preview configuration
@@ -70,7 +70,7 @@ export default () =>
         .child(S.documentTypeList("category").title("Categories")),
       S.listItem()
         .title("Tags")
-        .icon(MdLocalOffer)
+        .icon(MdTag)
         .schemaType("tag")
         .child(S.documentTypeList("tag").title("Tags")),
       S.listItem()
