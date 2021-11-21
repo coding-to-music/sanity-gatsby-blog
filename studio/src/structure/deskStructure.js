@@ -1,6 +1,6 @@
 import S from "@sanity/desk-tool/structure-builder";
 import { MdSettings } from "react-icons/md";
-import { MdPerson, MdDescription, MdLocalOffer, MdAttachFile } from "react-icons/md";
+import { MdPerson, MdDescription, MdLocalOffer, MdAttachFile, MdWebStories, MdOutlineFilterAlt } from "react-icons/md";
 import IframePreview from "../previews/IframePreview";
 
 // Web preview configuration
@@ -74,6 +74,16 @@ export default () =>
         .schemaType("tag")
         .child(S.documentTypeList("tag").title("Tags")),
       S.listItem()
+        .title("Trees")
+        .icon(MdOutlineFilterAlt)
+        .schemaType("tree")
+        .child(S.documentTypeList("tree").title("Trees")),
+      S.listItem()
+        .title("Projects")
+        .icon(MdWebStories)
+        .schemaType("project")
+        .child(S.documentTypeList("project").title("Projects")),
+      S.listItem()
         .title("Exhibits")
         .icon(MdAttachFile)
         .schemaType("exhibit")
@@ -83,7 +93,7 @@ export default () =>
       // defined the structure above.
       ...S.documentTypeListItems().filter(
         (listItem) =>
-          !["category", "author", "post", "exhibit", "tag", "siteSettings"].includes(
+          !["category", "author", "post", "exhibit", "tag", "tree", "project", "siteSettings"].includes(
             listItem.getId()
           )
       ),

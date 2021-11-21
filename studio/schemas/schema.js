@@ -8,6 +8,8 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import author from "./documents/author";
 import category from "./documents/category";
 import tag from "./documents/tag";
+import tree from "./documents/tree";
+import project from "./documents/project";
 import post from "./documents/post";
 import exhibit from "./documents/exhibit";
 import siteSettings from "./documents/siteSettings";
@@ -33,6 +35,9 @@ export default createSchema({
     exhibit,
     category,
     author,
+    tag,
+    tree,
+    project,
     mainImage,
     authorReference,
     bodyPortableText,
