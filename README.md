@@ -57,3 +57,8 @@ GraphQL	https://u7tr3btf.api.sanity.io/v1/graphql/production/default
 ## CODE
 GitHub repo	https://github.com/coding-to-music/sanity-gatsby-blog
 
+## Netlify Dashboard
+https://app.netlify.com/sites/sanity-gatsby-blog-studio-s6cyg9nt/overview
+
+## Sanity Studio Dashboard
+https://sanity-gatsby-blog-studio-s6cyg9nt.netlify.app/dashboard
